@@ -12,17 +12,6 @@ import (
 	"github.com/joho/godotenv"
 )
 
-type Foo struct {
-	Number int    `json:"number"`
-	Title  string `json:"title"`
-}
-
-type Setting struct {
-	Port    int
-	AppName string
-	Debug   bool
-}
-
 // use godot package to load/read the .env file and
 // return the value of the key
 func goDotEnvVariable(key string) string {
